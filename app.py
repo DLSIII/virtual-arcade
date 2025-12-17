@@ -1,6 +1,4 @@
-@app.get("/")
 from flask import Flask, render_template
-
 app = Flask(__name__)
 
 @app.get("/")
@@ -22,3 +20,4 @@ def ttt():
 @app.get("/health")
 def health():
     return "ok", 200
+
